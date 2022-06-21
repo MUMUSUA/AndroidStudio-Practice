@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Test Online</string>
+    <string name="aa">堪培拉是澳大利亚的首都</string>
+    <string name="bb">✔</string>
+    <string name="cc">×</string>
+    <string name="dd">Correct!</string>
+    <string name="ee">Incorrect!</string>
+    <string name="ff">Prev</string>
+    <string name="gg">Next</string>
+    <string name="q1">1.堪培拉是澳大利亚的首都</string>
+    <string name="q2">2.太平洋比大西洋大</string>
+    <string name="q3">3.尼罗河的源头在埃及</string>
+    <string name="q4">4.亚马逊河是美国最长的河</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CriminalIntent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crime_title_hint">Enter a title for this crime.</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved?</string>
+    <string name="send_crime_Button">Crime对象存入CrimeLab</string>
+    <string name="create_crime_Button">新建Crime对象</string>
+    <string name="report_crime_Button">导出列表</string>
+
+
+</resources>

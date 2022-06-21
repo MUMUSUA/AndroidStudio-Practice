@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/Welcome_imageButton"
+        android:layout_width="395dp"
+        android:layout_height="322dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/xiaoren"/>
+
+    <ImageButton
+        android:id="@+id/Pic_imageButton"
+        android:scaleType="fitXY"
+        android:layout_width="166dp"
+        android:layout_height="151dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/sheep"/>
+
+
+</LinearLayout>

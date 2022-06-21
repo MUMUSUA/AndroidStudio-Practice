@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f5f5f5"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+    <!--标题及结果框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.23"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:textColor="#2E2E2E"
+            android:textSize="31sp"/>
+
+        <TextView
+            android:id="@+id/id_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:textColor="#2E2E2E"
+            android:textSize="31sp"/>
+    </LinearLayout>
+    <!--按键-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="AC"
+                    android:textColor="#3c06ff"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="Del"
+                    android:textAllCaps="false"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_percent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="%"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_divide"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="÷"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="7"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="8"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="9"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_mul"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="×"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="4"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="5"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="6"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_sub"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="-"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="1"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="2"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="3"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="+"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/re"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:text="退出"
+                    android:textAllCaps="false"
+                    android:textColor="#3c06ff"
+                    android:textSize="25sp"/>
+
+                <Button
+                    android:id="@+id/btn_0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="0"
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_dot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray"
+                    android:onClick="Calculator_OnClick"
+                    android:text="."
+                    android:textColor="#6f7480"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_equals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue"
+                    android:onClick="Calculator_OnClick"
+                    android:text="="
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

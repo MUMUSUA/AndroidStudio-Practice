@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bignerdranch.android.criminalintent.BrowserIntentWebActivity">
+
+    <EditText
+        android:id="@+id/editText_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="https://www.baidu.com/"
+        android:inputType="textUri"
+        android:text="https://www.baidu.com/"/>
+
+    <Button
+        android:id="@+id/button_browser_intentWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_url"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:text="跳转"
+        android:onClick="onClickBrowserIntentWeb"/>
+
+    <Button
+        android:id="@+id/button_WebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_browser_intentWeb"
+        android:layout_alignStart="@+id/editText_url"
+        android:layout_below="@+id/editText_url"
+        android:layout_marginTop="15dp"
+        android:text="WebView"/>
+
+    <WebView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/button_WebView"
+        android:layout_alignStart="@+id/button_WebView"
+        android:layout_alignEnd="@+id/button_WebView"
+        android:id="@+id/WebViewBrowser"/>
+</RelativeLayout>
