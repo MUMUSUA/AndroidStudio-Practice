@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bignerdranch.android.mediaplayer.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/MusicPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+
+
+        <Button
+            android:id="@+id/MusicStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+
+    </LinearLayout>
+
+</FrameLayout>

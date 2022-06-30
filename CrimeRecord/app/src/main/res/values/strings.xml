@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">F△Bulous</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crime_title_hint">Enter the name of the ...</string>
+    <string name="crime_details_hint">Enter more about it ...</string>
+    <string name="crime_desc_hint">Write what you want ...</string>
+    <string name="crime_title_label">Name</string>
+    <string name="crime_details_label">Thinking</string>
+    <string name="crime_solved_label">Solved?</string>
+    <string name="send_crime_Button">Save</string>
+    <string name="create_crime_Button">New</string>
+    <string name="report_crime_Button">Roam</string>
+
+
+</resources>

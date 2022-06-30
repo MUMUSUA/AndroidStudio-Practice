@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
+        debug {    //这里
+            resValue("string", "PORT_NUMBER", "8083")
+        }
 
     }
 }
@@ -35,6 +38,8 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.0.0-alpha1'
+    compile 'com.facebook.stetho:stetho:1.4.1'
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
     testCompile 'junit:junit:4.12'
 }
 configurations.all {

@@ -12,50 +12,50 @@
         style="?android:listSeparatorTextViewStyle"
         />
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:orientation="horizontal">
-
-    <EditText android:id="@+id/crime_title"
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:hint="@string/crime_title_hint"
-              android:textSize="20dp"
-              android:layout_weight="4"
-        />
-    <TextView
-        android:id="@+id/count_TextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorRed"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="0"
-        />
-</LinearLayout>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/crime_details_label"
-    style="?android:listSeparatorTextViewStyle"
-    />
-<Button android:id="@+id/crime_date"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColor="@color/colorPrimary"
-    />
-<CheckBox android:id="@+id/crime_solved"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="16dp"
-          android:layout_marginRight="16dp"
-          android:text="@string/crime_solved_label"
-    />
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/crime_title"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/crime_title_hint"
+                  android:textSize="20dp"
+                  android:layout_weight="4"
+            />
+        <TextView
+            android:id="@+id/count_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        style="?android:listSeparatorTextViewStyle"
+        />
+    <Button android:id="@+id/crime_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorPrimary"
+        />
+    <CheckBox android:id="@+id/crime_solved"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:text="@string/crime_solved_label"
+        />
 
     <Button android:id="@+id/send_crime_Button"
             android:layout_width="match_parent"

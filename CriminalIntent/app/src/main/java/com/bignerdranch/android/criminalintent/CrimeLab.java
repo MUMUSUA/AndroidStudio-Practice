@@ -6,14 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+
 /**
  * Created by ASUS on 2022/5/18.
  */
 
 class CrimeLab {
 //    private static final CrimeLab ourInstance = new CrimeLab();
-    private List<Crime> mCrimes;
+    private List<Crime> mCrimes=new ArrayList<>();
     private static  CrimeLab sCrimeLab;
+
     public static CrimeLab getInstance(Context context) {
         if(sCrimeLab==null){
             sCrimeLab=new CrimeLab(context);

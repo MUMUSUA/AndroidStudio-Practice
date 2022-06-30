@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     str.append("-");
                     return;
                 }
-                if (str.charAt(len - 1) == '*' || str.charAt(len - 1) == '/') {
+                if (str.charAt(len - 1) == '*' || str.charAt(len - 1) == '/'|| str.charAt(len - 1) == '%') {
                     str.append(s);
                 } else if (isOperator(str.charAt(len - 1) + "")) {
                     str.replace(len - 1, len, s);
@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                     String num = null;
                     double d = calculate(str.toString());
                     if (Double.isNaN(d) || Double.isInfinite(d)) {
-                        result.setText("不能除以0");
+                        result.setText("无意义");
                     } else {
                         try {
                             num = df.format(d);
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
                 String num = null;
                 double d = calculate(str.toString());
                 if (Double.isNaN(d) || Double.isInfinite(d)) {
-                    result.setText("不能除以0");
+                    result.setText("无意义");
                 } else {
                     try {
                         num = df.format(d);

@@ -68,7 +68,7 @@ public class ShowActivity extends AppCompatActivity  implements View.OnClickList
                 if (Build.VERSION.SDK_INT < 24) {
                     imageUri = Uri.fromFile(outputImage);
                 } else {
-                    imageUri = FileProvider.getUriForFile(ShowActivity.this, "com.example.cameraalbumtest.fileprovider", outputImage);
+                    imageUri = FileProvider.getUriForFile(ShowActivity.this, "com.bignerdranch.android.criminalintent.fileprovider", outputImage);
                 }
                 // 启动相机程序
                 Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
@@ -101,10 +101,36 @@ public class ShowActivity extends AppCompatActivity  implements View.OnClickList
             case R.id.btn_choose_img:
                 //选择照片按钮
                 Toast.makeText(this, "请选择照片", Toast.LENGTH_SHORT).show();
+
+                if (ContextCompat.checkSelfPermission(ShowActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(ShowActivity.this, new String[]{ Manifest.permission. WRITE_EXTERNAL_STORAGE }, 1);
+                } else {
+                    openAlbum();
+                }
                 break;
             case R.id.btn_open_camera:
                 //拍照按钮
                 Toast.makeText(this, "即将打开相机", Toast.LENGTH_SHORT).show();
+                // 创建File对象，用于存储拍照后的图片
+                File outputImage = new File(getExternalCacheDir(), "output_image.jpg");
+                try {
+                    if (outputImage.exists()) {
+                        outputImage.delete();
+                    }
+                    outputImage.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                if (Build.VERSION.SDK_INT < 24) {
+                    imageUri = Uri.fromFile(outputImage);
+                } else {
+                    imageUri = FileProvider.getUriForFile(ShowActivity.this, "com.bignerdranch.android.criminalintent.fileprovider", outputImage);
+                }
+                // 启动相机程序
+                Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+                startActivityForResult(intent, TAKE_PHOTO);
+
                 break;
 
 

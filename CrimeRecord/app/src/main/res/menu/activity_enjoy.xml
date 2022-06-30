@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:app="http://schemas.android.com/apk/res-auto"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/menu_item0"
+            android:icon="@drawable/download"
+            android:title="下载"
+            app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@drawable/share"
+        android:title="分享"
+        app:showAsAction="ifRoom|withText"/>
+
+
+    <item
+        android:id="@+id/menu_item3"
+        android:title="StartMusic"
+        />
+    <item
+        android:id="@+id/menu_item2"
+        android:title="StopMusic"/>
+</menu>

@@ -27,10 +27,11 @@ public class CrimeDbLab {
     }
 
     public void addCrime(Crime crime){
+        Log.i("CrimeDatabase","------------------>addStart");
         ContentValues values=new ContentValues();
         values.put("uuid",crime.getId().toString());
         values.put("title",crime.getTitle().toString());
-        values.put("data",crime.getDate().getTime());
+        values.put("date",crime.getDate().getTime());
         values.put("solved",crime.isSolved()?1:0);
         Log.i("CrimeDatabase","------------------>addBefore");
         mDatabase.insert("crimes",null,values);
@@ -51,15 +52,34 @@ public class CrimeDbLab {
 
     }
 
+
+    public Cursor queryCrime(Crime crime){
+        Cursor cursor=mDatabase.query("crimes",
+                new String[]{"uuid","title","date","solved"},
+                "uuid=?",
+                new String[]{crime.getId().toString()},
+                null,null,null
+        );
+
+
+        return cursor;
+
+    }
+
     public void updateCrime(Crime crime){
 
         String uuidString=crime.getId().toString();
 
         ContentValues values=new ContentValues();
         values.put("title",crime.getTitle().toString());
-        values.put("data",crime.getDate().getTime());
+        values.put("date",crime.getDate().getTime());
         values.put("solved",crime.isSolved()?1:0);
 
         mDatabase.update("crimes",values,"uuid=?",new String[]{uuidString});
+    }
+
+    public void deleteCrime(String id){
+
+        mDatabase.delete("crimes","uuid=?",new String[]{id});
     }
 }

@@ -5,12 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.bignerdranch.android.criminalintent.ShowActivity">
 
 
     <Button
         android:id="@+id/take_photo"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Take Photo"
         tools:layout_editor_absoluteY="0dp"
@@ -18,7 +19,7 @@
 
     <Button
         android:id="@+id/choose_from_album"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose From Album"
         tools:layout_editor_absoluteY="0dp"
@@ -26,7 +27,7 @@
 
     <Button
         android:id="@+id/bottom_dialog"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose"
 />
